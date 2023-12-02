@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Přihlásit se</title>
+    <title>Registrovat se</title>
 </head>
 <body>
 <div class="panel">
@@ -13,39 +13,29 @@
                 <path d="M0.939339 10.9393C0.353552 11.5251 0.353552 12.4749 0.939339 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.80761 11.0711 0.80761 10.4853 1.3934L0.939339 10.9393ZM32 10.5L2 10.5L2 13.5L32 13.5L32 10.5Z" fill="black"/>
             </svg>    
         </a>           
-        <h1>Přihlásit se</h1>
+        <h1>Registrovat se</h1>
         </header>
     
     
     <main>
-        <div class="message message--error">
-            Zadané údaje nejsou správné. <span class="open-dialog" data-dialog="forgotten-password"> Zapomenuté heslo</span>?
-        </div>
-        <div class="message message--succes">
-            Akce se povedla!
-        </div>
 <form action="register.html" method="post">
     <label for="email" class="input-label">Email</label>
     <input type="email" name="email" id="email" class="input" required>
     <label for="password" class="input-label">Heslo</label>
     <input type="password" name="password" id="password" class="password" required>
+    <label for="passwordagain" class="input-label">Heslo znovu</label>
+    <input type="passwordagain" name="passwordagain" id="passwordagain" class="passwordagain" required>
 
-    <input type="submit" value="Přihlásit se" class="button button--right">
+    <label for="terms" class="checkbox-lable">
+    <input type="checkbox" name="terms" id="terms" class="checkbox" required>
+    Souhlasím s <a href=#>"podmínkami použití"</a> aplikace
+    </label>
+    <input type="submit" value="Registrovat se" class="button button--right">
 
 </form>
 
-<a href="register.html" class="panel-link">Registrovat se</a>
+<a href="login.html" class="panel-link">Přihlásit se</a>
     </main>
-    <dialog id="forgotten-password" class="dialog">
-        <form action="forgotten-password.html" method="post">
-            <label for="email" class="input-label">Registrační email</label>
-            <input type="email" name="email" id="reg-email" class="input" required>
-        
-            <input type="submit" value="Obnovit zapomenuté heslo" class="button button--full">
-        
-        </form>
-    </dialog> 
-
 </div>   
 </body>
 </html>
